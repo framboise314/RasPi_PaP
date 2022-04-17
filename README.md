@@ -1,5 +1,6 @@
 # RasPi_PaP
 Pilot a Nema stepper motor with Raspberry Pi and A4988
+
 Commander un moteur pas à pas Nema avec un Raspberry Pi et un driver A4988
 
 J’ai une idée qui me trotte dans la tête depuis un moment, c’est de réaliser une « poursuite » de satellite pilotée par un Raspberry Pi. L’idée c’est de faire tourner le programme Gpredict sur le Pi, de récupérer les coordonnées et de piloter un duo de moteurs pas à pas pour diriger une (petite) antenne vers un satellite. La première étape est de piloter un moteur pas à pas à partir du Raspberry Pi.
