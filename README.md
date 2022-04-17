@@ -25,3 +25,9 @@ Le câblage une fois réalisé donne ceci. J’ai muni le moteur PaP d’une fl�
 
 Ici le module A4988 avant la pose du radiateur sur le circuit de commande. La potentiomètre sert à régler le courant qui circule dans les bobines du moteur car le moteur est alimenté en courant, pas en tension. C’est le module qui va limiter le courant envoyé dans les bobines du moteur. Ne pas oublier que tant que le montage est alimenté le moteur est maintenu en position par le courant qui circule dans les bobines… Donc… il chauffe. Vous pouvez consulter la notice du A4988 en cliquant sur ce lien : https://www.framboise314.fr/wp-content/uploads/2022/04/A4988.pdf
 
+Liens :
+Article du blog : https://www.framboise314.fr/piloter-un-moteur-pas-a-pas-avec-le-raspberry-pi-et-un-driver-a4988/
+
+Vidéo youtube : https://youtu.be/YyUdxzrAYzA
+
+
