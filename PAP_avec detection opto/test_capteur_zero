@@ -24,5 +24,4 @@ while 1:
         print("Capteur à 1")
     if GPIO.input(ZERO) ==0:
         print("Capteur à 0")
-        sleep(1)
-    
+        sleep(1)    
