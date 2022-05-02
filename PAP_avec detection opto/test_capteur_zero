@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+# -*- coding:utf-8 -*-
+# Pour exécuter le prog. en ligne de commande
+# Programme de test du capteur
+# Quand le faisceau est coupé il affiche Capteur à 1
+
+from time import sleep         # Importer la bibliothèque de gestion du temps 
+import RPi.GPIO as GPIO        # Importer la bibliothèque de gestion des GPIO
+
+STEP = 14                      # La commande de pas est reliée au GPIO 14
+DIR = 15                       # La commande de direction est reliée au GPIO 15
+ZERO = 4
+vitesse = 0.0005
+
+GPIO.setmode(GPIO.BCM)         # Paramétrage de la numérotation des GPIO en mode BCM
+GPIO.setwarnings(False)        # Ne pas tenir comte des alertes
+GPIO.setup(STEP, GPIO.OUT)     # GPIO STEP configuré en sortie
+GPIO.setup(DIR, GPIO.OUT)      # GPIO DIR configuré en sortie
+
+GPIO.setup(ZERO, GPIO.IN)
+
+while 1:
+    if GPIO.input(ZERO) ==1:
+        print("Capteur à 1")
+    if GPIO.input(ZERO) ==0:
+        print("Capteur à 0")
+        sleep(1)
+    
